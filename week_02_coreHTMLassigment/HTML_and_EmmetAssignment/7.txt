@@ -1,0 +1,15 @@
+7. Explain in brief about the nesting operators in emmet.
+
+Ans: Nesting operators help to place elements with respect to other elements.
+
+Child (>): The child operator is used to specify that an element is a direct child of another element. It indicates a parent-child relationship between elements. For example, div>ul>li represents a <div> element containing a <ul> element, which in turn contains multiple <li> elements.
+
+1. Sibling (+): The sibling operator is used to place an element adjacent to another element, sharing the same parent.
+For example, h1+p represents an <h1> element followed by a <p> element, both sharing the same parent.
+
+2. Climb Up (^): The climb up operator is used to move up the DOM hierarchy to select a parent element.
+For example, div>ul>li^p represents a <div> element containing a <ul> element, and within the <ul> element, there is an <li> element followed by a <p> element that is a sibling to the <ul>.
+
+4. Multiplication *
+With * operator you can define how many times an element should be outputted.
+For Example: ul>li*3
