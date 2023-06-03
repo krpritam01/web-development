@@ -1,0 +1,9 @@
+5. Write a short note on tab index.
+
+Ans: The tabindex attribute can be applied to interactive elements such as links, buttons, form controls,and even non-interactive elements that have the ability to receive focus through scripting, such as <div> or <span> elements. The value of the tabindex attribute determines the order in which elements are focused.
+
+There are two additional options available for tabindex:
+
+1. Positive tabindex="0" -  this option allows elements that are not usually able to be focused via the keyboard to become focusable. This value of tabindex is particularly beneficial.
+
+2. Negative tabindex="-1" - this option enables elements that are not typically focusable to receive focus programmatically, such as through JavaScript, or as the target of links.
