@@ -1,0 +1,137 @@
+<!-- Prob 4. Create a simple Gmail landing page clone as shown in the below image.
+- Reference LinkD https://www.google.com/intl/en_in/gmail/about/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail-page</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'");
+        body{
+            font-family: "open Sens", sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            max-width: 1200px;
+            width: 100%;
+        }
+        nav{
+            padding: 0px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0px;
+        }
+        .logo-section{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-section > p{
+            width: 18px;
+            font-weight: 400;
+        }
+        .logo-section > img {
+            width: 30px;
+            height: 30px;
+        }
+        .button-section{
+            display: flex;
+            gap: 50px;
+        }
+        .button-1{
+            border: 0;
+            font-size: 15px;
+            background-color: transparent;
+            font-weight: 300;
+            color: #1a73e9;
+        }
+        .button-2{
+            padding: 10px 20px;
+            background-color: transparent;
+            border: 0.5px solid #4e4d4d;
+            color: #1a73e9;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        .button-3{
+            padding: 10px 20px;
+            background-color: #1a73e9;
+            font-size: 15px;
+            font-weight: 300;
+            color: #ffffff;
+            border: 0.5px solid #4e4d4d;
+            border-radius: 5px;
+        }
+        hr{
+            border: 0.2px solid #1f1f1f42;
+            margin-top: 5;
+        }
+        .main-section{
+            display: flex;
+            justify-content: space-around;
+            gap: 100px;
+        }
+        .sub-section-1{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0px 30px;
+        }
+        .sub-section-1 > h2{
+            font-size: 50px;
+            margin-bottom: 0px;
+        }
+        .sub-section-1 > p{
+            margin: 10px 0px;
+        }
+        .home-button{
+            display: flex;
+            margin-top: 30px;
+            gap: 50px;
+        }
+        .sub-section-2{
+            width: 60%;
+            display: flex;
+            justify-content: center;
+        }
+        .sub-section-2 > img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo-section">
+            <img src="./image/logo-gmail.png" alt="logo">
+            <p>Gmail</p>
+            </div>
+            <div class="button-section">
+                <button class="button-1">For Work</button>
+                <button class="button-2">Sign In</button>
+                <button class="button-3">Create an account</button>
+            </div>
+        </nav>
+        <hr>
+        <section class="main-section">
+            <section class="sub-section-1">
+                <h2>Secure, smart, and easy to use email</h2>
+                <p>
+                    Get more done with Gmail. Now integrated wit googe Chat, Google Meet, and more , all in one place.
+                </p>
+                <section class="home-button">
+                    <button class="button-3">Create an account</button>
+                    <button class="button-1">For Work</button>
+                </section>
+            </section>
+            <section class="sub-section-2">
+                <img src="./image/gmail.jpg" alt="image">
+            </section>
+        </section>
+    </div>
+</body>
+</html>
