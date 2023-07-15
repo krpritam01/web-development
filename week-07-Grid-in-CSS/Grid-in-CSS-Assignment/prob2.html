@@ -1,0 +1,99 @@
+<!-- Prob 2. The landing page designed in question 01 showcases an impressive layout and design. However, it lacks a crucial component-a navigation bar Without a navigation bar, users may find navigating through different sections of the website challenging. To address this issue design a navigation bar using CSS Grid, as shown in the image below as of now there is no need to update the navigation links. Navigation Bars enhance usior experience, improve usability, and ensure easy access to various pages and content -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>healthy food</title>
+    <style>
+        .navigation-bar{
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .navigation-bar img{
+            width: 70px;
+        }
+        .navigation-bar a{
+            text-decoration: none;
+            padding-right: 50px;
+            color: #030303;
+        }
+        .navigation-bar button{
+            margin-left: 60%;
+            padding: 10px 0px;
+            border: 0px;
+            border-radius: 5px;
+            background-color: #0ee26d;
+            color: #000000;
+            font-weight: bold;
+        }
+        .navigation-bar a:hover{
+            color: #04f182;
+            font-weight: bold;
+        }
+        .container{
+            max-width: 1200px;
+            display: grid;
+            margin: auto;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 10px;
+            gap: 20px;
+            align-items: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .text-section{
+            padding: 0px 50px;
+        }
+        .image-section{
+            background-color: #ffff00;
+            height: 100%;
+            max-height: 90vh;
+        }
+        .text-section h1{
+            font-size: 40px;
+        }
+        .text-section p{
+            color: #526c63;
+        }
+        .text-section button{
+            padding: 10px 50px;
+            border: 0px;
+            background-color: #060606;
+            color: #ffffff;
+            font-size: 18px;
+            margin-top: 30px;
+        }
+        .image-section img{
+            width: 70%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navigation-bar">
+        <img src="https://img.freepik.com/premium-vector/healthy-food-logo-design-template_18099-1260.jpg?w=740" alt="logo">
+            <div>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button>Login</button>
+    </nav>
+    <div class="container">
+        <section class="text-section">
+            <h1>Healthy Food</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias eveniet beatae excepturi corporis repellat nam, ratione incidunt rem modi. Perferendis facere quibusdam rem eius, maxime officia esse optio veritatis animi sit error quae eaque aliquid quisquam? Necessitatibus velit consequatur deleniti incidunt veniam accusamus, perferendis quasi cumque molestias in illo temporibus placeat consequuntur illum quos corporis neque eius ipsum quo sapiente minus, et repellendus. Adipisci tempora ea architecto voluptatum ipsa corrupti odio
+            </p>
+            <button>Read More</button>
+        </section>
+        <section class="image-section">
+            <img src="https://media.istockphoto.com/id/870173346/photo/healthy-food.jpg?s=612x612&w=0&k=20&c=g6ewhe862ZaSQevMw7VS-VJzwXXEHL6Gqpr-fEDx0jY=" alt="healthy food">
+        </section>
+    </div>
+</body>
+</html>

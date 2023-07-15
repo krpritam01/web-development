@@ -1,0 +1,79 @@
+<!-- Prob 8. Create a simple color picker using CSS Grid to enable users to select colors efficiently. The objective is to design a visually appealing interface that allows users to choose colors and obtain their corresponding color codes 8 leveraging CSS Grid, ensure a user-friendly layout that simplifies the color selection process Let's build a color picker similar to the one shown in the below image. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <style>
+        body {
+            background-color: #1b1b1b;
+            color: #ccd7e3;
+        }
+        h1 {
+            font-size: 40px;
+            font-weight: normal;
+        }
+        .container {
+            max-width: 1400px;
+            width: 100%;
+            margin: auto;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .grid-container {
+            display: grid;
+            gap: 50px;
+            margin: 0px 50px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .grid-item {
+            padding: 200px 0px;
+            width: 100%;
+            border-radius: 20px;
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+            color: #000000;
+        }
+        .grid-item-01 {
+            background-color: #8D3DAF;
+        }
+        .grid-item-02 {
+            background-color: #E07C24;
+        }
+        .grid-item-03 {
+            background-color: #758283;
+        }
+        .grid-item-04 {
+            background-color: #E03B8B;
+        }
+        .grid-item-05 {
+            background-color: #FF6666;
+        }
+        .grid-item-06 {
+            background-color: #03C6C7;
+        }
+        .grid-item-07 {
+            background-color: #CAD5E2;
+        }
+        .grid-item-08 {
+            background-color: #35BDD0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Feeling Fancy</h1>
+        <div class="grid-container">
+            <div class="grid-item grid-item-01">#8D3DAF</div>
+            <div class="grid-item grid-item-02">#E07C24</div>
+            <div class="grid-item grid-item-03">#758283</div>
+            <div class="grid-item grid-item-04">#E03B8B</div>
+            <div class="grid-item grid-item-05">#FF6666</div>
+            <div class="grid-item grid-item-06">#03C6C7</div>
+            <div class="grid-item grid-item-07">#CAD5E2</div>
+            <div class="grid-item grid-item-08">#35BDD0</div>
+        </div>
+    </div>
+</body>
+</html>

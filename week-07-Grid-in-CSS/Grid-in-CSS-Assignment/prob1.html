@@ -1,0 +1,61 @@
+<!-- Prob 1. Imagine you are working with a team for a restaurant client. You have been responsible for designing a landing page hero section for a restaurant specializing in serving healthy food. Your objective is to recreate the layout displayed in the given image using a CSS grid. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>healthy food</title>
+    <style>
+        .container{
+            max-width: 1200px;
+            display: grid;
+            margin: auto;
+            grid-template-columns: repeat(2, 1fr);
+            border: 2px solid black;
+            padding: 10px;
+            gap: 20px;
+            align-items: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .text-section{
+            padding: 0px 50px;
+        }
+        .image-section{
+            background-color: #ffff00;
+            height: 100%;
+            max-height: 90vh;
+        }
+        .text-section h1{
+            font-size: 40px;
+        }
+        .text-section p{
+            color: #526c63;
+        }
+        .text-section button{
+            padding: 10px 50px;
+            border: 0px;
+            background-color: #060606;
+            color: #ffffff;
+            font-size: 18px;
+        }
+        .image-section img{
+            width: 69%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="text-section">
+            <h1>Healthy Food</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias eveniet beatae excepturi corporis repellat nam, ratione incidunt rem modi. Perferendis facere quibusdam rem eius, maxime officia esse optio veritatis animi sit error quae eaque aliquid quisquam? Necessitatibus velit consequatur deleniti incidunt veniam accusamus, perferendis quasi cumque molestias in illo temporibus placeat consequuntur illum quos corporis neque eius ipsum quo sapiente minus, et repellendus. Adipisci tempora ea architecto voluptatum ipsa corrupti odio
+            </p>
+            <button>Read More</button>
+        </section>
+        <section class="image-section">
+            <img src="https://media.istockphoto.com/id/870173346/photo/healthy-food.jpg?s=612x612&w=0&k=20&c=g6ewhe862ZaSQevMw7VS-VJzwXXEHL6Gqpr-fEDx0jY=" alt="healthy food">
+        </section>
+    </div>
+</body>
+</html>

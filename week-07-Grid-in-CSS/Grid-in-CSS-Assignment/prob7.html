@@ -1,0 +1,83 @@
+<!-- Prob 7. Design a visually stunning photo gallery using CSS Grid for a photographer's portfollo website. The goal is to create a dynamic layout that showcases the photographer's images in an organized and visually appealing manner. By leveraging the power of CSS Gnd, ensure that the gallery provides a seamless and immersive user experience, allowing visitors to easily navigate through the photos and appreciate the photographer's work. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio|Gallery</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 250px);
+            gap: 20px;
+            border: 2px solid #000000;
+            border-radius: 20px;
+            padding: 20px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        .photo-01 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .photo-02 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .photo-03 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .photo-04 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .photo-05 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .photo-06 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="photo-01">
+            <img src="https://llandscapes-10674.kxcdn.com/wp-content/uploads/2018/04/landscape-photography-portfolio-5.jpg" alt="image-1">
+        </div>
+        <div class="photo-02">
+            <img src="https://blog-assets.shawacademy.com/uploads/2016/01/Wait-for-the-right-light.jpg" alt="image-2">
+        </div>
+        <div class="photo-03">
+            <img src="https://www.adorama.com/alc/wp-content/uploads/2018/11/landscape-photography-tips-yosemite-valley-feature.jpg" alt="image-3">
+        </div>
+        <div class="photo-04">
+            <img src="https://cdn.fstoppers.com/media/2020/10/18/five_simple_tips_to_improve_your_landscape_photography_05.jpg" alt="image-4">
+        </div>
+        <div class="photo-05">
+            <img src="https://expertphotography.b-cdn.net/wp-content/uploads/2022/05/Landscape-Photography-Sophie-Turner.jpg" alt="image-5">
+        </div>
+        <div class="photo-06">
+            <img src="https://dvyvvujm9h0uq.cloudfront.net/com/articles/1528191289-sunset-3434911-1280.jpg" alt="image-6">
+        </div>
+    </div>
+</body>
+</html>

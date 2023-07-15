@@ -1,0 +1,157 @@
+<!-- Prob 3. When learning through project-based learning, it is crucial to incorporate existing features that are interesting and relevant to our website project. To achieve this, let's integrate a section of Swiggy.com into our project. Let's aim to integrate a section of Swiggy.com into our project, leveraging its engaging design and functionality. The output expected is shown in the below image. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>healthy food</title>
+    <style>
+        .navigation-bar{
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .navigation-bar img{
+            width: 70px;
+        }
+        .navigation-bar a{
+            text-decoration: none;
+            padding-right: 50px;
+            color: #030303;
+        }
+        .navigation-bar button{
+            margin-left: 60%;
+            padding: 10px 0px;
+            border: 0px;
+            border-radius: 5px;
+            background-color: #0ee26d;
+            color: #000000;
+            font-weight: bold;
+        }
+        .navigation-bar a:hover{
+            color: #04f182;
+            font-weight: bold;
+        }
+        .container{
+            max-width: 1200px;
+            display: grid;
+            margin: auto;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 10px;
+            gap: 20px;
+            align-items: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .text-section{
+            padding: 0px 50px;
+        }
+        .image-section{
+            background-color: #ffff00;
+            height: 100%;
+            max-height: 90vh;
+        }
+        .text-section h1{
+            font-size: 40px;
+        }
+        .text-section p{
+            color: #526c63;
+        }
+        .text-section button{
+            padding: 10px 50px;
+            border: 0px;
+            background-color: #060606;
+            color: #ffffff;
+            font-size: 18px;
+            margin-top: 30px;
+        }
+        .image-section img{
+            width: 70%;
+            height: 100%;
+        }
+        .sub-section img{ 
+          width: 150px;
+        }
+        .section-3{
+          max-width: 1200px;
+          display: grid;
+          margin: auto;
+          grid-template-columns: repeat(3, 1fr);
+          align-items: center;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          background-color: #260b05;
+        }
+        .sub-section{
+          margin: 100px 50px;
+          text-align: center;
+        }
+        .sub-section h1{
+          color: #ffffff;
+        }
+        .sub-section p{
+          color: #8c6e54;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navigation-bar">
+        <img src="https://img.freepik.com/premium-vector/healthy-food-logo-design-template_18099-1260.jpg?w=740" alt="logo">
+            <div>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button>Login</button>
+    </nav>
+    <div class="container">
+        <section class="text-section">
+            <h1>Healthy Food</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias eveniet beatae excepturi corporis repellat nam, ratione incidunt rem modi. Perferendis facere quibusdam rem eius, maxime officia esse optio veritatis animi sit error quae eaque aliquid quisquam? Necessitatibus velit consequatur deleniti incidunt veniam accusamus, perferendis quasi cumque molestias in illo temporibus placeat consequuntur illum quos corporis neque eius ipsum quo sapiente minus, et repellendus. Adipisci tempora ea architecto voluptatum ipsa corrupti odio
+            </p>
+            <button>Read More</button>
+        </section>
+        <section class="image-section">
+            <img src="https://media.istockphoto.com/id/870173346/photo/healthy-food.jpg?s=612x612&w=0&k=20&c=g6ewhe862ZaSQevMw7VS-VJzwXXEHL6Gqpr-fEDx0jY=" alt="healthy food">
+        </section>
+    </div>
+    <section class="section-3">
+      <div class="sub-section">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/8161/8161144.png"
+          alt="No Minimum order"
+        />
+        <h1>No Minimum Order</h1>
+        <p>
+          Order in for yourself or for the group, with no restrictions on order
+          value
+        </p>
+      </div>
+      <div class="sub-section">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/3198/3198553.png"
+          alt="Order Tracking"
+        />
+        <h1>Live Order Tracking</h1>
+        <p>
+          Know where your order is at all times, from the restaurant to your
+          doorstep
+        </p>
+      </div>
+      <div class="sub-section">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/9561/9561688.png"
+          alt="Fast delivery"
+        />
+        <h1>Lightning-Fast Delivery</h1>
+        <p>
+          Experience Swiggy's superfast delivery for food delivered fresh & on
+          time
+        </p>
+      </div>
+    </section>
+</body>
+</html>
