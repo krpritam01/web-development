@@ -1,0 +1,49 @@
+<!-- Prob 7. In this coding challenge, we will explore CSS button animations commonly used in product landing pages to attract users attention and encourage product registration. A good example can be found at https://codercommunity.io/. Let's create a similar animated button in this assignment to capture the user's attention on our landing page. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Animation</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        button {
+            padding: 15px 40px;
+            border: 0;
+            background: linear-gradient(90deg, 
+            rgba(68, 103, 224, 1) 15%, 
+            rgba(57, 51, 191, 1) 100%,
+            rgba(235, 166, 145, 1) 100%);
+            border-radius: 10px;
+            animation: bounce 1s infinite alternate;
+        }
+        a {
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        @keyframes bounce {
+            0%,
+            100% {
+                transform: translateY(-25%);
+                animation-timing-function: cubic-bezier(0.8, 0, 1 ,1);
+            }
+            50% {
+                transform: translateY(0);
+                animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <button>
+        <a href="https://pwskills.com">Click Me To Visit PW Skills.</a>
+    </button>
+</body>
+</html>

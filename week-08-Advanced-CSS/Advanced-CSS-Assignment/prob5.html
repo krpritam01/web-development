@@ -1,0 +1,37 @@
+<!-- Prob 5. In this coding challenge, create a simple webpage that initially applies a blur effect to an image, and upon hovering over it, the image gradually becomes clear and revealed. Such effects are commonly utilized when unveiling new offers or showcasing hidden content. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlock The Image</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h1 {
+            font-size: 50px;
+            text-decoration: underline;
+        }
+        img {
+            width: 775px;
+            height: 500px;
+            filter: blur(1rem);
+            border: 5px solid #000;
+        }
+        img:hover {
+            filter: blur(0px);
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover To Reveal The Image.</h1>
+    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="image">
+</body>
+</html>

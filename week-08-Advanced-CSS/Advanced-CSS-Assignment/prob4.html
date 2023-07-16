@@ -1,0 +1,30 @@
+<!-- Prob 4. Let's now try to implement the CSS transform and transition property. In this coding challenge, you are expected to create a simple webpage with an image as shown in the reference image below. Note that website responsiveness is optional. On hovering the image must be zoomed slowly. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Card</title>
+    <style>
+        body {
+            display: flex;
+            overflow: hidden;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            height: 500px;
+            width: 775px;
+            border: 5px solid #000;
+        }
+        img:hover {
+            scale: 1.5;
+            transition: 1.5s;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="image">
+</body>
+</html>
