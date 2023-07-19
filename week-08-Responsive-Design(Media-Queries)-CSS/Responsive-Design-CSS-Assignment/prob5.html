@@ -1,0 +1,64 @@
+<!-- Prob 5. You are tasked with building a webpage that displays an image gallery using a grid layout. The challenge is to ensure the gallery is visually appealing and functional on both large and small screens. On large screens, the gallery should display multiple images per row, while on small screens, it should collapse into a single column for optimal viewing. Refer to the attached images for visual reference. Implement this using CSS Grid and media queries for responsiveness. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive-Gallery</title>
+    <style>
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .grid-item > img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            border: 3px solid #000000;
+        }
+        .grid-container {
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            padding: 10px;
+        }
+        .grid-item {
+            padding: 2px;
+            height: 250px;
+            text-align: center;
+        }
+        @media (max-width: 765px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Images</h1>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="image1">
+        </div>
+        <div class="grid-item">
+            <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt="image2">
+        </div>
+        <div class="grid-item">
+            <img src="https://img.freepik.com/premium-photo/image-colorful-galaxy-sky-generative-ai_791316-9864.jpg?w=2000" alt="image3">
+        </div>
+        <div class="grid-item">
+            <img src="https://thumbs.dreamstime.com/b/horizontal-d-automne-14198443.jpg" alt="image4">
+        </div>
+        <div class="grid-item">
+            <img src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg" alt="image5">
+        </div>
+        <div class="grid-item">
+            <img src="https://img.freepik.com/free-photo/erawan-waterfall-autumn-thailand-beautiful-waterfall-with-emerald-pool-nature_335224-777.jpg?w=2000" alt="image6">
+        </div>
+    </div>
+</body>
+</html>
