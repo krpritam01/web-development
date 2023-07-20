@@ -1,0 +1,13 @@
+3. Write a short note on tags, elements, and attributes along with relevant examples ?
+HTML tags, elements, and attributes work together to define the structure, content, and behavior of web pages.
+Tags:
+Tags are fundamental building blocks in HTML that define the structure and content of a web page. They are enclosed in angle brackets (< and >) and appear as pairs consisting of an opening tag and a closing tag. The opening tag denotes the start of an element, while the closing tag marks its end.
+For example: <p>I am happy to learn Web Development.</p>. In this example, the opening tag is <p> and the closing tag is </p>. 
+
+Elements:
+Elements are formed by combining tags with their content. An element starts with an opening tag, includes the content, and ends with a closing tag.
+For Example:<p>I am happy to learn Web Development.</p>. In this example, the opening tag is <p> and the closing tag is </p>. The content along with the tags is the paragraph element.
+
+Attributes:
+Attributes provide additional information about an HTML element and are specified within the opening tag. They are used to modify the behavior or appearance of an element. Attributes consist of a name and a value, separated by an equals sign (=) and enclosed in quotes.
+For example:<a href="https://google.com" >Go To Google</a>. In this example, the a element is used to create a hyperlink. The href attribute specifies the URL that the hyperlink.

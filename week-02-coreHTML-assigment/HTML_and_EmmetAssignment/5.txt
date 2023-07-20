@@ -1,0 +1,11 @@
+5. What is emmet? List some of the advantages emmet offers?
+
+Emmet is a free add-on for your text editor that allows you to type shortcuts that allows us to write HTML, CSS, and other code formats quickly expand them into complete code structures. 
+For example: typing ul>li*5 and then expanding it with Emmet.
+
+There are some advantage of emmit.
+	1. Increased Efficiency.
+	2. Saves a lot of time.
+	3. Rapid HTML and CSS Generation.
+	4. Simplified Workflow.
+	5. Reduced Errors.

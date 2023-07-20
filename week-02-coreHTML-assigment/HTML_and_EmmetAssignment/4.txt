@@ -1,0 +1,17 @@
+4. List out any 3 tags we learned in this module and give a brief explanation about the tags.
+
+Ans: There are 3 tags which we have learn in this module are:
+
+1.<h1> </h1>- The heading tag is used to define the main heading or title of a section or page.h1 represents the highest level of the Headings.
+For Example: <h1>Welcome to My Website</h1>
+
+2.<img> - The image tag is used to insert images into an HTML document. It is a self-closing tag, meaning it does not require a closing tag.
+For Example:<a href="https://www.example.com">Click here</a>
+
+3. <div> - The div tag is a generic container element used to group and organize other elements within an HTML document. It does not have any semantic meaning  but provides a way to apply styling, apply classes or IDs for CSS and JavaScript manipulation, and structure the layout of a webpage.
+For Example:
+<div>
+  <h1>Welcome to My Website</h1>
+  <p>This is a paragraph of text.</p>
+  <img src="path/to/image.jpg" alt="Description of the image">
+</div>
