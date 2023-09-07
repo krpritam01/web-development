@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Events</h1>
+    
+    <button id="mybutton">Click Me!</button>
+    <script>
+
+        var button = document.getElementById('mybutton')
+
+        // define event handle function
+
+        function handleClick() {
+            alert('button clicked')
+        }
+
+        // adding event listener
+
+        button.addEventListener('click', handleClick)
+
+        // bubble phase
+
+        // remove after 3 secs
+
+        setTimeout(function() {
+            button.removeEventListener('click', handleClick)
+        },3000)
+
+
+    </script>
+</body>
+</html>

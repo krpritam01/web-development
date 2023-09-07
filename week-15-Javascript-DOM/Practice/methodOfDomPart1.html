@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<script src="methodOfDomPart1.js"></script>
+<body>
+    <h1>DOM Selectors</h1>
+    <p id="myParagraph"> This is paragraph with dummy text</p>
+    <span id="hi">Hello</span>
+    <ul>
+        <li class="listItem">item 1</li>
+        <li class="listItem">item 2</li>
+        <li class="listItem">item 3</li>
+        <li class="listItem">item 4</li>
+    </ul>
+
+    <ol>
+        <li>item 5</li>
+        <li>item 6</li>
+        <li>item 7</li>
+        <li>item 8</li>
+    </ol>
+
+    <script>
+        // select elements using different DOM selectors
+
+        // console.log(document.getElementById('myParagraph'))
+        // console.log(document.getElementById('hi'))
+
+        const paragraph = document.getElementById('myParagraph');
+
+        const listItem = document.getElementsByClassName("listItem")
+
+        const spanItem = document.querySelector('#hi');
+
+        const firstListItem = document.querySelector('.listItem')
+        const allListItem = document.querySelectorAll('.listItem')
+
+        //all item target
+
+        const targetAllLiItems = document.getElementsByTagName('li')
+
+        console.log(targetAllLiItems)
+
+        paragraph.addEventListener('click', () => {
+            paragraph.classList.toggle('highlight')
+        })
+
+        // console.log(listItem)
+
+        // console.log(allListItem)
+
+        // spanItem.style.color = 'green';
+
+        // console.log(firstListItem)
+
+        // firstListItem.textContent = 'updated item'
+
+    </script>
+</body>
+</html>
